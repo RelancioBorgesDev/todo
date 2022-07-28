@@ -43,8 +43,8 @@
     background: var(--gray-400);
     color: var(--gray-100);
 }
-
-.content{
+/* Conteudo vazio */
+.content_empty{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,12 +54,14 @@
     gap: 1rem;
 
 }
-.content div{
+.content_empty div{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.content div h3 {
+.content_empty div h3 {
     color: var(--gray-200);
 }
+
+/* Conteudo com items */
