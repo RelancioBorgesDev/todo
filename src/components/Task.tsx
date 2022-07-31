@@ -10,6 +10,7 @@ interface ITask {
 }
 
 export function Task({ tasks, handleTaskDone, deleteTaskById }: ITask) {
+  console.log(tasks);
   return (
     <div>
       {tasks.length === 0 ? (

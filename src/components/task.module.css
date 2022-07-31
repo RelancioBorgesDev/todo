@@ -40,13 +40,18 @@
     margin-left: .75rem;
     font-size: .875rem ;
 }
+
+
 .task {
+    display: flex;
     color: var(--gray-100);
+    justify-content: flex-start;
 }
 
 .task_finished {
     text-decoration: line-through;
     color: var(--gray-200);
+
 }
 
 button{

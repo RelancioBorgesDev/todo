@@ -18,7 +18,7 @@ export default function App() {
   const qntTasks = tasks.length;
   const completedTasks = tasks.filter((tasks) => tasks.isDone).length;
 
-  function handleCreateTask(event: any) {
+  function handleAddTask(event: any) {
     event.preventDefault();
     setTasks([
       ...tasks,
@@ -46,6 +46,7 @@ export default function App() {
 
   function deleteTaskById(id: string) {
     const newTask = tasks.filter((task) => task.id !== id);
+    console.log(id)
     setTasks(newTask);
   }
 
@@ -53,7 +54,7 @@ export default function App() {
     <>
       <div className={styles.app_container}>
         <Header />
-        <form onSubmit={handleCreateTask} className={styles.add_tarefa}>
+        <form onSubmit={handleAddTask} className={styles.add_tarefa}>
           <input
             type='text'
             placeholder='Adicione uma nova tarefa'
