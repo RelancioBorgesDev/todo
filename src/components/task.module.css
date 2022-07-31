@@ -1,48 +1,3 @@
-.task_container{
-    width: 736px;
-    height: 287px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: 5.563rem;
-}
-
-.header{
-    width: 100%;
-    height: 2.68rem;
-    border-bottom: 1px solid var(--gray-400);
-    border-radius: .5rem;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.header p{
-    display: flex;
-    gap: .5rem;
-
-} 
-.criada{
-    color: var(--blue);
-}
-
-.concluida{
-    color: var(--purple);
-
-}
-
-.criada span, .concluida span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1.5rem;
-    height: 1.1rem;
-    border-radius: 999px;
-    padding: 2px 8px;
-    background: var(--gray-400);
-    color: var(--gray-100);
-}
 /* Conteudo vazio */
 .content_empty{
     display: flex;
@@ -59,9 +14,59 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
 }
 .content_empty div h3 {
     color: var(--gray-200);
 }
 
 /* Conteudo com items */
+
+.container {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .75rem;
+    background: var(--gray-500);
+    padding: 1rem;
+    margin-top: 1.5rem;
+
+    border: 1px solid #333333;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.container span {
+    margin-left: .75rem;
+    font-size: .875rem ;
+}
+.task {
+    color: var(--gray-100);
+}
+
+.task_finished {
+    text-decoration: line-through;
+    color: var(--gray-200);
+}
+
+button{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.circle {
+    color: var(--blue);
+}
+
+.circle_filled {
+    color: var(--blue-dark);
+
+}
+
+.trash {
+    color: var(--gray-200);
+}
+
+.trash:hover{
+    color: var(--danger);
+}
